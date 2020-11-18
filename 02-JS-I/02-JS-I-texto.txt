@@ -1,0 +1,64 @@
+
+TAREA NUMERO I
+
+EXPLICACION DE CONCEPTOS BÁSICOS JAVASCRIPT
+
+1.VARIABLES
+	
+	Una variable es como una caja donde podemos guardar cosas, cosas como numeros o letras.
+	
+	Hay dos variables principales:
+		
+		1-. La primera es "var" y puede variar, es como decir que en tu caja de juguetes lo que guardarás allí lo puedes cambiar si así lo deseas.
+		
+		2-. La otra es "const" que es constante, como si los juguetes que tienes en esta caja no quieres que cabien.
+
+	Entonces tienes dos cajas, una es "var" y la otra es "const". A esto le puedes agregar un nombre para poder definirla y un valor:
+			
+			# var cantidadDeJuguetes = 15; // Puede ser numeros
+			# const noSacarJuguetes = "Stop";// Pueden ser Letras
+
+	Así podrás saber cuantos juguetes contiene una caja o asignarle un "strings".
+
+2.STRINGS
+
+	Un "strings" es una forma en que Javascript reconoce un texto a través de comillas simples o comillas dobles como este ejemplo:
+
+			var nombreDeAnime = "Naruto"; // Esta es una Strings
+
+
+3.FUNCIONES
+
+	Las funciones permiten trabajar las cajas que contienen algo (variables) para esto Javascript proporsiona una palabra clave llamada "function" seguida de un nombre que haga referencia a lo que puede hacer o lo que contenga, por último se agregan paréntesis "()" y corchetes "{}":
+
+							## function sumaDeMisJuguetes (){}
+
+
+
+	Conociendo las variables que hasta ahora se han visto se pueden hacer sumas, restas, agregandole argumentos a "function" que se colocan dentro del paréntesis separados por una coma:
+
+			## function sumaDeJuguetes(Rojos, Azules){ // Argumentos Rojos, Azul
+					var suma = Rojos + Azules; // Puede ser una resta, dividir o multiplicar.
+					return suma;
+			}
+
+	Por lo que a los argumentos podríamos llamarles variables, y para utilizar su valor se debe utilizar el mismo nombre con el cual se predefinieron los argumentos. 
+	
+
+
+4. DECLARACIONES if, true, false.
+
+	La declaración "if" es una expresión que se encarga de devolver "true" si una operación cumple con los requisitos de lo contrario sigue avanzando y arrojará "false":
+
+	  ## function soyMayordeEdad(10){
+				if (10<18){
+				return true;
+				}
+				return false;
+			}
+
+	El argumento de valor 10 si es menor que el valor 18 por lo tanto, la expresión es verdadera lo cual arrojará "true", si no lo fuera seguiría y arrojaría "false". 
+
+5.VALORES BOOLEANOS
+
+	En Javascript los "Booleanos" son valores de "true" y "false" "Verdadero" y "Falso".

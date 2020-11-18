@@ -1,0 +1,29 @@
+PROTOTYPE
+
+Un "prototype" es un Método que tienen todas las "Clases" para ahorrar memória, pero más importante aún para obtener acceso a los objetos dentro esa "clase". Esto ayuda en el ahorro de código y lo mencionado anteriormente.
+
+	function Usuario(nombre, rut, direccion, telefono, correo){
+	
+		this.nombre = nombre;
+		this.rut = rut;
+		this.direccion = direccion;
+		this.telefono = telefono;
+		this.correo = correo;
+	}
+
+	Usuario.prototype.datos = function(){
+		return "Nombre: " + this.nombre + " Rut: " + this.rut + " Direccion: " + this.direccion + " Numero de Celular: " + this.telefono + " Direccion de correo electronico: " + this.correo;
+	}
+
+	let diego = new Usuario("Diego Rojas Melo", "17.649.024-1",  "Rosas 2599",  "84342140", "diego@gmail.com");
+	let maria = new Usuario("Maria Alejandra Garrido", "16.489.647-2", "Villa Romeral 548", "94564534", "aleg@gmail.com");
+
+	console.log(diego.datos());
+	console.log(maria.datos());
+
+
+De esta manera se ahorra bastante código.
+
+CONSTRUCTORS (De Clases)
+
+Un consructor es una "class" que permite crear muchos objetos que comparten las mismas propiedades y métodos. Por ejemplo un auto comparte muchas características con otros autos, tiene catro ruedas, un manubrio, frenos, espejos etc. Entonces "Autos" podría ser un constrcutor ya que de la palabra auto se puede entender que casi todos los autos comparten cosas en común. Para esto sirve un constructor o clase.
