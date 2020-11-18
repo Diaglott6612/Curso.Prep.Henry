@@ -2,17 +2,15 @@ ARRAYS
 
 "Arrays" es una forma de almacenar datos, una lista, números, funciones etc.  
 
-La cual nos permitirá acceder a ellas e incluso agregar cosas sacar etc. 
+La cual nos permitirá acceder a ellas e incluso agregar cosas o sacar cosas. 
 
-Es como si hacer una lista de todos nuestros juguetes y cuando lo deseáramos pudiéramos acceder 
+Es como hacer una lista de todos nuestros juguetes y cuando lo deseáramos pudiéramos acceder 
 
 a ellos cuando quisiéramos para saber cuántos juguetes tenemos, pudiendo agregar uno nuevo o eliminar otro. 
 
 Un ejemplo sería:
 
-
-
-var superHeroes = ["Batman", "Superman", "Naruto", "Kakaroto"];
+	var superHeroes = ["Batman", "Superman", "Naruto", "Kakaroto"];
 
 Como se ve hicimos una var (Variable) con un "array" de tus "super heroes"  preferidos, ahora podemos hacer otras cosas.
 En el caso que quisieras saber en cual están tus "supereHeroes" lo puedes hacer de esta manera:

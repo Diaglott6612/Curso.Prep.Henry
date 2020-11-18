@@ -1,0 +1,103 @@
+CONCEPTOS
+
+OBJETOS
+
+Son parecidos a los "Arrays" o "Matrices" que nos permiten almacenar algo, la diferencia importante de un Objeto es que podemos almacenar características más especificas que permitirán identificar que contiene que:
+
+var cajaDeJuguetes= {
+	
+	colorDeCaja: "Azul",
+	nombreDelPropietario: "Diego",
+	cantidadDeJuguetes: 30,
+	tipoDeJuguetes: "SuperHero",
+	jugueteFavorito: "Goku",
+};
+
+Aquí se puede ver que en "cajaDeJuguete", tiene tu nombre, cantidad de jugutes, que tipo de juguetes hay en ella y hasta el juguete que más te gusta de tu colección. 
+Si nos damos cuenta en este ejemplo hay una variable llamada "cajaDeJuguetes" que contiene un objeto que se inicializa con estos simbolos "{}" y lo que va dentro tendrá la siguinete forma:
+	
+	Primero una "clave" para saber a que nos referimos en este caso es "nombre" seguido de dos puntos, no punto y coma (muy importante eso) y en su lado derecho el "valor" que puede ser numero, booleano, str, null etc. Incluso se pueden repetir, pero no con una "clave"  que sólo puede haber una con la misma asignación, algo asi:
+		
+		var cajaDeJuguetes = {
+			nombreDelPropietario: "Diego", // Solo puede haber un "nombreDelPropietario".
+		};
+
+Esto nos permitirá acceder a "nombre" que contiene "Diego" de esta forma es más fácil y gráfico saber que contiene que, además de eso el "valor" que en este caso es un strings.
+
+
+PROPIEDADES
+
+Las propiedades son las "claves" y "Valor"
+
+	var cajaDeJuguetes = {
+
+		nombreDelPropietario: "Diego", // Aqui tenemos una propiedad
+
+	};
+
+Es bueno que cuando crees una propiedad trates de colocar un nombre que sea coherente con su contenido.
+
+
+METODO
+
+
+Como mencionamos arriba un objeto puede contener en él numeros, strings etc. A los cuales le agregamos una propiedad para saber qué contiene tal cosa:
+	
+	var cajaDeJuguetes = {	
+		
+		cantidadDeJuguetes: 30,
+		colorDeLaCaja: "Azul",
+
+		};
+
+También podemos incluir un "Método" que vendría siendo una "Propiedad" cuyo valor es una "Función" 
+
+	var cajaDeJuguetes = {
+		colorDeCaja: "Azul",
+		tipoDeJuguetes: "SuperHero",
+		cantidad: 30,
+
+		Saludar: function(){ // Propiedad cuyo valor es una "Función"
+			console.log("Esta caja es de Diego");
+		}
+	};
+
+En este ejemplo se agregó una función dentro del "Objeto" de nombre Saludar que a su vez es una "Propiedad". 
+
+BUCLE FOR ... IN
+
+El bucle "for ... in " nos permite acceder a las "Propiedades" de un Objeto:
+
+	var cajaDeJuguetes = {
+		colorDeCaja: "Azul",
+		tipoDeJuguetes: "SuperHero",
+		cantidad: 30;
+};
+	for (let clave in cajaDeJuguetes){
+		console.log(clave);
+		console.log(cajaDeJuguetes[clave]);
+
+}
+
+De esta forma recorrerá todas las claves del objeto y para cuando haya pasado por todas.
+
+NOTACION DE PUNTOS VS CORCHETES
+
+Estas notaciones nos sirven para acceder a los valores de un objeto invocandolas con su clave y nombre de objeto:
+
+
+	user.colorDeCaja; //Notación de Punto
+	user["tipoDeJuguete"]; 
+
+
+
+	
+
+
+
+
+
+
+
+
+
