@@ -1,0 +1,15 @@
+FUNCIONES CALLBACK
+
+Un "callback" es una función que se pasa por parametros a otra función y se le llama función de orden superior, que quiere decir que no recibe un valor, numero, strings, arrays si no que recibe una función.
+
+	//ejemplo de como procesar un array
+	
+	var dragonBall = ["Goku", "Vegeta", "Gohan"];
+
+		dragonBall.forEach(function (name, index){
+			console.log(index + 1 + " . " + name)
+		})
+
+	//salida:
+	//1. Goku, 2. Vegeta etc.
+	
