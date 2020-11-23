@@ -52,9 +52,6 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Ejercicio 6. */
 #ejercicioSiete div{
-    position: relative;
-    width: 0;
-    top: 15px;
     text-align: justify;
 
 }
